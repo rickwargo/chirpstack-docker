@@ -6,7 +6,5 @@ servers=["tcp://mosquitto:1883"]
 username=""
 password=""
 
-[integration.mqtt]
-event_topic_template="us915_0/gateway/{{ .GatewayID }}/event/{{ .EventType }}"
-state_topic_template="us915_0/gateway/{{ .GatewayID }}/state/{{ .StateType }}"
-command_topic_template="us915_0/gateway/{{ .GatewayID }}/command/#"
+[general]
+log_level=3
